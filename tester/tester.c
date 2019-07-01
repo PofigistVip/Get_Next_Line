@@ -3,19 +3,22 @@
 #include <fcntl.h>
 #include "get_next_line.h"
 
-#define FT_GNL_FILE_SIMPLE "tests/simple.txt"
-
-int		main(void)
+int		main(int argc, char **argv)
 {
 	int		fd;
 	char	*line;
 	int		result;
 
+	if (argc != 2)
+	{
+		printf("usage ./tester [filename]\n");
+		return (0);
+	}
 	line = NULL;
 	result = 0;
-	if ((fd = open(FT_GNL_FILE_SIMPLE, O_RDONLY)) <= 0)
+	if ((fd = open(argv[1], O_RDONLY)) <= 0)
 	{
-		printf("Open %s error!\n", FT_GNL_FILE_SIMPLE);
+		printf("Open %s error!\n", argv[1]);
 		return (-1);
 	}
 	while ((result = get_next_line(fd, &line)) > 0)
