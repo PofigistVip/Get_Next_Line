@@ -14,6 +14,9 @@
 # define GET_NEXT_LINE_H
 # define BUFF_SIZE 1024
 # include <string.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include "libft.h"
 
 typedef struct	s_fd_buffer
 {

@@ -10,10 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include "libft.h"
 #include "get_next_line.h"
 
 static int		get_next_line_destroy_fd(t_fd_buffer **start, t_fd_buffer *fd)
