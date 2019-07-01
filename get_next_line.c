@@ -86,7 +86,8 @@ int				get_next_line(const int fd, char **line)
 			return (get_next_line_read(current, line));
 		current = current->next;
 	}
-	current = (t_fd_buffer*)malloc(sizeof(t_fd_buffer));
+	if ((current = (t_fd_buffer*)malloc(sizeof(t_fd_buffer))) == NULL)
+		return (-1);
 	if ((current->buff = ft_strnew(1)) == NULL)
 		return (-1);
 	current->length = 0;
