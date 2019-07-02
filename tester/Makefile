@@ -6,8 +6,10 @@ LIBFT=$(MAINDIR)libft
 
 SRC=tester.c \
 	$(MAINDIR)get_next_line.c
+NAME=tester
 
+all: $(NAME)
 
-all:
+$(NAME):
 	make -C $(LIBFT)
-	gcc $(CFLAGS) -o tester $(SRC) -I $(INCLUDE) -I $(LIBFT)/includes -L $(LIBFT) -lft 
+	gcc $(CFLAGS) -o $(NAME) $(SRC) -I $(INCLUDE) -I $(LIBFT)/includes -L $(LIBFT) -lft
