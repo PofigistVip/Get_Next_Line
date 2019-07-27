@@ -1,5 +1,8 @@
 <p align="center"><img src="info/Libft_Get_Next_Line_Logo.png"</p>
 
+## Описание
+Дополнение к [Libft](https://github.com/PofigistVip/Libft) включающее в себя функцию get_next_line для построчного чтения потоков.
+
 ## Установка
 В файле Makefile укажите путь LIBFT к своей библиотеке libft или используйте предоставленную.  
 Внимание!!! Версия libft представленная в этом проекте является урезанной и не содержит функций не используемых get_next_line!
