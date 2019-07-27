@@ -1,4 +1,4 @@
-<p align="center"><img src="Libft_Get_Next_Line_Logo.png"</p>
+<p align="center"><img src="info/Libft_Get_Next_Line_Logo.png"</p>
 
 ## Установка
 В файле Makefile укажите путь LIBFT к своей библиотеке libft или используйте предоставленную.  
