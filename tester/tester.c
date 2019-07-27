@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
+#include <string.h>
 #include "get_next_line.h"
 
 static int		simple_test(int argc, char **argv)
